@@ -8,6 +8,7 @@ import csv
 app = Flask(__name__)
 
 
+# Functions for rendering HTML templates
 @app.route("/")
 def main_page():
     return render_template("index.html")
@@ -18,6 +19,7 @@ def html_page(page_name):
     return render_template(page_name)
 
 
+# Functions for Contact Me form
 def write_to_file(data):
     with open("./database.txt", "a") as db:
         db.write(
@@ -49,6 +51,7 @@ def contact_form():
         return "Request Error occured"
 
 
+# Functions for passwordcheck demo
 def get_color(pass_strength: str) -> str:
     if pass_strength == "Very Poor":
         return "red"
@@ -85,6 +88,7 @@ def submit():
         return "Submission Error occured"
 
 
+# Functions for displaying and hiding preformatted code
 @app.route("/show_code", methods=["POST"])
 def show_code():
     if request.method == "POST":
@@ -127,10 +131,46 @@ def hide_code():
         return "Submission Error occured"
 
 
-# @app.route('/update', methods=['POST'])
-# def update():
-#     new_data = request.form.get('data')
-#     return jsonify({'status': 'success'})
+# functions for showing more text
+@app.route("/show_text", methods=["GET"])
+def show_text():
+    if request.method == "GET":
+        try:
+            display = f'\
+            {code.get("About")}\
+            <button\
+            class="button"\
+            style="padding: 0 15px"\
+            hx-get="/hide_text"\
+            hx-target="#more_about"\
+            >\
+            Hide\
+            </button>'
+            return display
+        except:
+            return "Display Error occured"
+    else:
+        return "Submission Error occured"
+
+
+@app.route("/hide_text", methods=["GET"])
+def hide_text():
+    if request.method == "GET":
+        try:
+            display = f'\
+            <button\
+            class="button"\
+            style="padding: 0 15px"\
+            hx-get="/show_text"\
+            hx-target="#more_about"\
+            >\
+            Show More\
+            </button>'
+            return display
+        except:
+            return "Display Error occured"
+    else:
+        return "Submission Error occured"
 
 
 if __name__ == "__main__":

@@ -94,4 +94,30 @@ code = {
             return get_password_leaks_count(response, tail)
     </code>
     """,
+    "About": """
+    <div class="col-4 col-12-medium">
+        <p>
+        Through my exploration into engineering, the software
+        discipline emerged as not only the most important to learn
+        but the most fun to engage with. It is for that reason that
+        I chose to study Computer Systems Engineering. A benefit of
+        going down the software route is that it allows a single
+        individual to create such a wide breadth of technologies
+        using nothing more than their own computer.
+        </p>
+    </div>
+    <div class="col-4 col-12-medium">
+        <p>
+        This brings us to this website. The purpose of this website
+        is to host and document my various projects as I create
+        them. For the moment, it documetns only a very small amount
+        of projects, but as time goes on I believe it will become a
+        great reflection of my journey as a Computer Systems
+        Engineer. The website itself is also one such project, using
+        a pre-made html/css template and a Flask server. It will
+        continue to be updated and refined as new projects are
+        created.
+        </p>
+    </div>
+""",
 }

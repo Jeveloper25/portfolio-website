@@ -1,13 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel='stylesheet' type="text/css" href="static\\style.css">
-</head>
-<body>
-    ABOUT ME
-    <script src='static\\script.js'></script>
-</body>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Icarus Tech</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../static/css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+    />
+    <noscript
+      ><link rel="stylesheet" href="../static/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header id="header">
+        <h1 id="logo"><a href="index.html">Icarus Tech</a></h1>
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="#">Projects</a>
+              <ul>
+                <li><a href=".\passwordcheck.html">Password Security</a></li>
+                <!-- <li><a href=".\machinelearning.html">Machine Learning</a></li> -->
+                <!-- <li><a href=".\no-sidebar.html">Undecided</a></li> -->
+                <!-- <li>
+										<a href="#">Submenu</a>
+										<ul>
+											<li><a href="#">Option 1</a></li>
+											<li><a href="#">Option 2</a></li>
+											<li><a href="#">Option 3</a></li>
+											<li><a href="#">Option 4</a></li>
+										</ul>
+									</li> -->
+              </ul>
+            </li>
+            <!-- <li><a href="elements.html">Elements</a></li> -->
+            <li>
+              <a href="contact_me.html" class="button primary">Contact Me</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Main -->
+      <div id="main" class="wrapper style1">
+        <div class="container">
+          <header class="major">
+            <h2>About Me</h2>
+            <p>An aspiring Computer Systems Engineer</p>
+          </header>
+          <div class="row gtr-150">
+            <div class="col-8 col-12-medium">
+              <!-- Content -->
+              <section id="content">
+                <a href="#" class="image fit"
+                  ><img src="../static/images/cyber_face.jpg" alt=""
+                /></a>
+                <h3>Computer Systems Engineer</h3>
+                <p>
+                    I am a current university student studying Computer Systems
+                    Engineering. Tech has always been something that really
+                    interested me. Since I was young, I've been fascinated by
+                    technologies from video games to embedded systems and
+                    robotics, which is what lead me to pursue a career as an
+                    engineer so that I may create some of these technologies
+                    myself.
+                </p>
+                <p>
+                    Through my exploration into engineering, the software
+                    discipline emerged as not only the most important to learn but
+                    the most fun to engage with. It is for that reason that I
+                    chose to study Computer Systems Engineering. A benefit of
+                    going down the software route is that it allows a single
+                    individual to create such a wide breadth of technologies using
+                    nothing more than their own computer.
+                </p>
+                <p>
+                    This brings us to this website. The purpose of this website is
+                    to host and document my various projects as I create them. For
+                    the moment, it documetns only a very small amount of projects,
+                    but as time goes on I believe it will become a great
+                    reflection of my journey as a Computer Systems Engineer. The
+                    website itself is also one such project, using a pre-made
+                    html/css template and a Flask server. It will continue to be
+                    updated and refined as new projects are created.
+                </p>
+              </section>
+            </div>
+            <div class="col-4 col-12-medium">
+              <!-- Sidebar -->
+              <section id="sidebar">
+                <section>
+                  <h3>Password Security</h3>
+                  <a href="passwordcheck.html" class="image fit"
+                    ><img src="../static/images/matrix.jpg" alt=""
+                  /></a>
+                  <p>
+                    A very simple project that allows a user to assess the
+                  security of a password.
+                  </p>
+                  <footer>
+                    <ul class="actions">
+                      <li><a href="passwordcheck.html" class="button">Learn More</a></li>
+                    </ul>
+                  </footer>
+                </section>
+                <hr />
+                <!-- <section>
+                  <a href="#" class="image fit"
+                    ><img src="../static/images/pic07.jpg" alt=""
+                  /></a>
+                  <h3>Amet Lorem Tempus</h3>
+                  <p>
+                    Sed tristique purus vitae volutpat commodo suscipit amet sed
+                    nibh. Proin a ullamcorper sed blandit. Sed tristique purus
+                    vitae volutpat commodo suscipit ullamcorper sed blandit
+                    lorem ipsum dolore.
+                  </p>
+                  <footer>
+                    <ul class="actions">
+                      <li><a href="#" class="button">Learn More</a></li>
+                    </ul>
+                  </footer>
+                </section>
+              </section> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li>
+            <a href="#" class="icon brands alt fa-twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands alt fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands alt fa-linkedin-in"
+              ><span class="label">LinkedIn</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands alt fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands alt fa-github"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon solid alt fa-envelope"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; Untitled. All rights reserved.</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/jquery.scrolly.min.js"></script>
+    <script src="../static/js/jquery.dropotron.min.js"></script>
+    <script src="../static/js/jquery.scrollex.min.js"></script>
+    <script src="../static/js/browser.min.js"></script>
+    <script src="../static/js/breakpoints.min.js"></script>
+    <script src="../static/js/util.js"></script>
+    <script src="../static/js/main.js"></script>
+  </body>
 </html>
