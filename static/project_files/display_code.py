@@ -1,6 +1,5 @@
 code = {
-    'password_security': 
-    """
+    "password_security": """
     <code>
         import math
         import re
@@ -31,7 +30,7 @@ code = {
                 self.security_score = round(self.security_score, 2)
 
             def analyze_symbols(self):
-                symbols = re.findall(r'[!@#$%^&*()_\\-0-9]', self.password)
+                symbols = re.findall(r"[!@#$%^&*()_\\-0-9]", self.password)
                 self.security_score += len(symbols) * 1.2
                 self.security_score = round(self.security_score, 2)
 
@@ -64,8 +63,35 @@ code = {
                 self.analyze_leaks()
     </code>
     """,
-    'password_breach': 
-    """
+    "password_breach": """
+    <code>
+        import requests
+        import hashlib
+        import sys
 
-    """
+
+        def request_api_data(query_char: str):
+            url = "https://api.pwnedpasswords.com/range/" + query_char
+            response = requests.get(url)
+            if response.status_code != 200:
+                raise RuntimeError(f"Error fetching: {response.status_code}, check the api and try again.")
+            return response
+
+
+        def get_password_leaks_count(hashes, hash_to_check):
+            hashes = (line.split(":") for line in hashes.text.splitlines())
+            for h, count in hashes:
+                if h == hash_to_check:
+                    return count
+            return 0
+
+
+        def pwn_api_check(password):
+            # check password if it exists in API response
+            sha1password = hashlib.sha1(password.encode("utf-8")).hexdigest().upper()
+            first5char, tail = sha1password[:5], sha1password[5:]
+            response = request_api_data(first5char)
+            return get_password_leaks_count(response, tail)
+    </code>
+    """,
 }

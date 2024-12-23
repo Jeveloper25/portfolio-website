@@ -213,6 +213,11 @@ input, select, textarea {
 		padding: 0.25em 0.65em;
 	}
 
+	p code {
+		margin: 0 0em;
+		padding: 0.25em;
+	}
+
 	pre {
 		-webkit-overflow-scrolling: touch;
 		font-family: "Courier New", monospace;
