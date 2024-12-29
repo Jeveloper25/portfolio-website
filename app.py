@@ -171,7 +171,3 @@ def hide_text():
             return "Display Error occured"
     else:
         return "Submission Error occured"
-
-
-if __name__ == "__main__":
-    app.run(debug=True)

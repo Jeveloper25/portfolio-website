@@ -13,10 +13,28 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="..\static\css\main.css" />
-    <link
+    <!-- <link
       rel="shortcut icon"
       href="{{ url_for('static', filename='favicon.ico') }}"
+    /> -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./static/images/apple-touch-icon.png"
     />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./static/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./static/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./static/images/site.webmanifest" />
     <noscript
       ><link rel="stylesheet" href="..\static\css\noscript.css"
     /></noscript>
@@ -88,12 +106,11 @@
               <div class="col-4 col-12-medium">
                 <p>
                   I am a current university student studying Computer Systems
-                  Engineering. Tech has always been something that really
-                  interested me. Since I was young, I've been fascinated by
-                  technologies from video games to embedded systems and
-                  robotics, which is what lead me to pursue a career as an
-                  engineer so that I may create some of these technologies
-                  myself.
+                  Engineering. Tech has always really interested me. Since I was
+                  young, I've been fascinated by technologies ranging from video
+                  games to embedded systems and robotics, which led me to pursue
+                  a career as an engineer so that I may create some of these
+                  technologies myself.
                 </p>
                 <ul class="actions">
                   <li>
@@ -101,29 +118,6 @@
                   </li>
                 </ul>
               </div>
-              <!-- <div class="col-4 col-12-medium">
-                <p>
-                  Through my exploration into engineering, the software
-                  discipline emerged as not only the most important to learn but
-                  the most fun to engage with. It is for that reason that I
-                  chose to study Computer Systems Engineering. A benefit of
-                  going down the software route is that it allows a single
-                  individual to create such a wide breadth of technologies using
-                  nothing more than their own computer.
-                </p>
-              </div>
-              <div class="col-4 col-12-medium">
-                <p>
-                  This brings us to this website. The purpose of this website is
-                  to host and document my various projects as I create them. For
-                  the moment, it documetns only a very small amount of projects,
-                  but as time goes on I believe it will become a great
-                  reflection of my journey as a Computer Systems Engineer. The
-                  website itself is also one such project, using a pre-made
-                  html/css template and a Flask server. It will continue to be
-                  updated and refined as new projects are created.
-                </p>
-              </div> -->
             </div>
           </div>
         </div>
@@ -167,12 +161,17 @@
         /></span>
         <div class="content">
           <header>
-            <h2>Rendering Engine</h2>
+            <h2>Text RPG</h2>
             <p>Currently in development</p>
           </header>
           <p>
-            3D rendering engine created in C. Project currently in development
-            and will be updated once complete.
+            Text RPG created in C++. Will be interacted with through a GUI,
+            exact features to be determined. All code is viewable on
+            <a
+              href="https://github.com/Jeveloper25/Text-Based-RPG.git"
+              target="_blank"
+              >GitHub</a
+            >, website will be updated as the project progresses.
           </p>
           <!-- <ul class="actions">
             <li>
@@ -187,31 +186,31 @@
       <section id="four" class="wrapper style1 special fade-up">
         <div class="container">
           <header class="major">
-            <h2>More Projects</h2>
-            <p>
-              Iaculis ac volutpat vis non enim gravida nisi faucibus posuere
-              arcu consequat
-            </p>
+            <h2>Projects</h2>
           </header>
           <div class="box alt">
-            <div class="row gtr-uniform">
+            <div
+              class="row gtr-uniform"
+              style="display: flex; justify-content: space-evenly"
+            >
               <section class="col-4 col-6-medium col-12-xsmall">
-                <span class="icon solid alt major fa-chart-area"></span>
-                <h3>Ipsum sed commodo</h3>
+                <a href="#two"
+                  ><span class="icon solid alt major fa-lock"></span
+                ></a>
+                <h3>Password Security</h3>
                 <p>
-                  Feugiat accumsan lorem eu ac lorem amet accumsan donec.
-                  Blandit orci porttitor.
+                  Very simple project that allows the user to assess the
+                  strength of a given password.
                 </p>
               </section>
               <section class="col-4 col-6-medium col-12-xsmall">
-                <span class="icon solid alt major fa-comment"></span>
-                <h3>Eleifend lorem ornare</h3>
-                <p>
-                  Feugiat accumsan lorem eu ac lorem amet accumsan donec.
-                  Blandit orci porttitor.
-                </p>
+                <a href="#three"
+                  ><span class="icon solid alt major fa-file"></span
+                ></a>
+                <h3>Text RPG</h3>
+                <p>Text RPG created in C++.</p>
               </section>
-              <section class="col-4 col-6-medium col-12-xsmall">
+              <!-- <section class="col-4 col-6-medium col-12-xsmall">
                 <span class="icon solid alt major fa-flask"></span>
                 <h3>Cubilia cep lobortis</h3>
                 <p>
@@ -228,7 +227,7 @@
                 </p>
               </section>
               <section class="col-4 col-6-medium col-12-xsmall">
-                <span class="icon solid alt major fa-file"></span>
+                <span class="icon solid alt major fa-file!CHANGED: fa-comment!"></span>
                 <h3>Odio laoreet accumsan</h3>
                 <p>
                   Feugiat accumsan lorem eu ac lorem amet accumsan donec.
@@ -236,20 +235,20 @@
                 </p>
               </section>
               <section class="col-4 col-6-medium col-12-xsmall">
-                <span class="icon solid alt major fa-lock"></span>
+                <span class="icon solid alt major fa-lock!CHANGED: fa-chart-area!"></span>
                 <h3>Massa arcu accumsan</h3>
                 <p>
                   Feugiat accumsan lorem eu ac lorem amet accumsan donec.
                   Blandit orci porttitor.
                 </p>
-              </section>
+              </section> -->
             </div>
           </div>
-          <footer class="major">
+          <!-- <footer class="major">
             <ul class="actions special">
               <li><a href="#" class="button">Magna sed feugiat</a></li>
             </ul>
-          </footer>
+          </footer> -->
         </div>
       </section>
 
@@ -274,6 +273,22 @@
       <footer id="footer">
         <ul class="icons">
           <li>
+            <a
+              href="https://www.linkedin.com/in/keon-foster-210b4632a/"
+              target="_blank"
+              class="icon brands alt fa-linkedin-in"
+              ><span class="label">LinkedIn</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/Jeveloper25"
+              target="_blank"
+              class="icon brands alt fa-github"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+          <!-- <li>
             <a href="#" class="icon brands alt fa-twitter"
               ><span class="label">Twitter</span></a
             >
@@ -284,29 +299,21 @@
             >
           </li>
           <li>
-            <a href="#" class="icon brands alt fa-linkedin-in"
-              ><span class="label">LinkedIn</span></a
-            >
-          </li>
-          <li>
             <a href="#" class="icon brands alt fa-instagram"
               ><span class="label">Instagram</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands alt fa-github"
-              ><span class="label">GitHub</span></a
             >
           </li>
           <li>
             <a href="#" class="icon solid alt fa-envelope"
               ><span class="label">Email</span></a
             >
-          </li>
+          </li> -->
         </ul>
         <ul class="copyright">
           <li>&copy; Untitled. All rights reserved.</li>
-          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+          <li>
+            Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>
+          </li>
         </ul>
       </footer>
     </div>
